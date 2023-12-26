@@ -1,0 +1,10 @@
+apiVersion: spaces.upbound.io/v1alpha1
+kind: ControlPlane
+metadata:
+  name: ctp2
+  annotations:
+    internal.spaces.upbound.io/kube-composition: k8s-kine
+spec:
+  writeConnectionSecretToRef:
+    name: kubeconfig-ctp2
+    namespace: default
